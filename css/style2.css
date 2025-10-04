@@ -1,0 +1,142 @@
+/* Estilos generales */
+body {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+   background: linear-gradient(90deg, #f1970f, #d17f3be5);
+  color: #f3f3fa;}
+/* Header */
+header {
+  background: linear-gradient(90deg, #272727, #272727);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+navbar {}
+.contenedor{
+  text-align: left;
+  height: 1px;
+  width: 200px
+}
+.slider {
+  width: 20%;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgb(5, 1, 1);
+}
+
+.slides {
+  display: flex;
+  width: 199%;
+  animation: slide 9s infinite;
+}
+
+.slides img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-100%); }
+  100% { transform: translateX(50%); }
+}
+
+header h1 {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+header h1:hover {
+  transform: scale(1.1);
+}
+
+/* Navegación */
+nav a {
+  margin: 0 15px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animado {
+  color: red;
+  font-weight: bold;
+  animation: parpadeo 1.5s infinite;
+}
+
+@keyframes parpadeo {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Galería */
+.galeria {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.galeria img {
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.galeria img:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* Formulario */
+form {
+  background: #fff;
+  padding: 15px;
+  margin: auto;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px gray;
+}
+
+input, textarea {
+  width: 60%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #2196F3;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0b79d0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #000000;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
